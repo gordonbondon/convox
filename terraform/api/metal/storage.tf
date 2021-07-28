@@ -16,7 +16,7 @@ resource "kubernetes_persistent_volume_claim" "storage" {
     storage_class_name = "rook-ceph-shared"
 
     resources {
-      requests = {
+      requests {
         storage = "100Gi"
       }
     }
